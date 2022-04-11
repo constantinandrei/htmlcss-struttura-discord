@@ -5,7 +5,7 @@
 }
 
 :root {
-    --border: 1px dashed black;
+    --border: 2px dashed black;
 }
 
 body {
@@ -13,17 +13,38 @@ body {
     font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1.5rem 0;
+}
+p {
+    margin-bottom: 1rem;
+}
+
 header {
     background-color: rgb(176, 216, 230);
 }
 
-header .container.flex {
-    padding: 1rem 1rem;
-}
+/*Universal Classes*/
 
 .flex {
     display: flex;
+    justify-content: center;
 }
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+/* Header classes*/
 
 .header-box {
     min-width: 200px;
@@ -39,12 +60,8 @@ header .container.flex {
     padding: 0 10px;
 }
 
-.container {
-    width: 100%;
-    max-width: 960px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding: 2em 1em;
+header .container.flex {
+    padding: 1rem 1rem;
 }
 
 .header-box {
@@ -53,20 +70,28 @@ header .container.flex {
     min-height: 10px;
 }
 
+/*Main Classes*/
+
+.bg-container {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.bg-container.section-1 {
+    background-color: rgb(0, 0, 139);
+}
+
+.section1-content {
+    background-color: rgb(238, 130, 238);
+    min-height: 250px;
+    max-width: 700px;
+    flex-grow: 1;
+    border: var(--border);
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 1.5rem 0;
-}
-p {
-    margin-bottom: 1rem;
-}
