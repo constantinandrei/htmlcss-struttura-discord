@@ -95,3 +95,22 @@ header .container.flex {
     clear: both;
 }
 
+.large-box {
+    width: calc(100% / 5 * 3);
+    background-color: rgb(30, 144, 255);
+    border: var(--border);
+}
+
+.small-box {
+    width: calc(100% / 5 * 2);
+    background-color: rgb(255, 192, 203);
+    border: var(--border);
+}
+
+.section-content {
+    min-height: 400px;
+}
+
+.gray-bg {
+    background-color: rgb(211, 211, 211);
+}
