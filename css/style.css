@@ -4,10 +4,39 @@
     box-sizing: border-box;
 }
 
+:root {
+    --border: 1px dashed black;
+}
+
 body {
-    background-color: #FFFFFE;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 16px;
+}
+
+header {
+    background-color: rgb(176, 216, 230);
+}
+
+header .container.flex {
+    padding: 1rem 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.header-box {
+    min-width: 200px;
+    padding: 10px 5px;
+}
+
+.header-box.flex {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.link-box {
+    padding: 0 10px;
 }
 
 .container {
@@ -16,6 +45,12 @@ body {
     min-width: 300px;
     margin: 0 auto;
     padding: 2em 1em;
+}
+
+.header-box {
+    background-color: rgb(218, 166, 35);
+    border: var(--border);
+    min-height: 10px;
 }
 
 .clearfix::after {
